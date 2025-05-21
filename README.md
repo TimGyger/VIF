@@ -13,10 +13,9 @@ This will install all dependencies listed in requirements.txt into your environm
 ## Repository Structure
 
 - **`Simulation`**
-  Provides scripts for generating data for the simulation studies and the generated Data used for the experiments.
-  Contains scripts to run the simulation experiments. Refer to the `README.md` file in the `Simulation` folder for a detailed description of the various simulations and how to execute them.
+  Provides scripts for generating data for the simulation studies and the generated Data used for the experiments and contains scripts to run the simulation experiments. Refer to the `README.md` file in the `Simulation` folder for a detailed description of the various simulations and how to execute them.
 
-- **`Real World`**  
+- **`Real_World`**  
   Includes scripts and data for the real-world application.
 
 
