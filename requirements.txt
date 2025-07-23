@@ -14,7 +14,7 @@ executing==2.1.0
 filelock==3.16.1
 fonttools==4.55.3
 fsspec==2024.12.0
-gpboost==1.5.8
+gpboost==1.6.1
 gpytorch==1.13
 greenlet==3.1.1
 idna==3.10
