@@ -85,16 +85,17 @@ model_vif.fit(y=y_train)
 # 5. Prediction
 # ---------------------------------------------------
 
-pred_mean, pred_var = model_vif.predict(
+pred = model_vif.predict(
     gp_coords_pred=X_test,
     predict_var=True
 )
 
 print("First 5 predictive means:")
-print(pred_mean[:5])
+print(pred["mu"][:5])
 
 print("\nFirst 5 predictive variances:")
-print(pred_var[:5])
+print(pred["var"][:5])
 
 ```
+
 
