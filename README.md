@@ -72,7 +72,7 @@ model_vif = gpb.GPModel(
     num_ind_points=num_ind_points,           # VIF inducing points
     ind_points_selection="kmeans++",         # Inducing point selection
     matrix_inversion_method="cholesky",      # Dense Cholesky (if likelihood is not Gaussian, use "iterative")
-    gp_approx="full_scale_vecchia"           # Use VIF
+    gp_approx="vif"                          # Use VIF
 )
 
 # ---------------------------------------------------
@@ -97,5 +97,6 @@ print("\nFirst 5 predictive variances:")
 print(pred["var"][:5])
 
 ```
+
 
 
