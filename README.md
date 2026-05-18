@@ -4,11 +4,59 @@ In this repository, we provide the complete code for simulated and real-world ex
 
 The  methods for VIF approximations are implemented in the **GPBoost** package, available here: [https://github.com/fabsig/GPBoost](https://github.com/fabsig/GPBoost).
 
-To install the required Python packages, use the following command:
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/TimGyger/VIF.git
+cd VIF
 ```
+
+We recommend creating a dedicated virtual environment.
+
+### Linux / macOS
+
+```bash
+python3.12 -m venv vif_env
+source vif_env/bin/activate
+```
+
+### Windows (PowerShell)
+
+```powershell
+python -m venv vif_env
+vif_env\Scripts\activate
+```
+
+Upgrade `pip`:
+
+```bash
+python -m pip install --upgrade pip
+```
+
+Install the required Python packages:
+
+```bash
 pip install -r requirements.txt
 ```
-This will install all dependencies listed in requirements.txt into your environment. Furthermore, install all modules in [https://github.com/katzfuss-group/DKL-GP](https://github.com/katzfuss-group/DKL-GP) to run the DKLGP method used in the real-world data comparison.
+
+This will install all dependencies listed in `requirements.txt` into your environment.
+
+The experiments were tested using Python 3.12. Some dependencies, in particular PyTorch CUDA wheels, may not yet support newer Python versions such as Python 3.14.
+
+The `requirements.txt` file includes the PyTorch CUDA wheel index required for GPU-enabled installations. If you do not have an NVIDIA GPU or CUDA installed, replace
+
+```text
+torch==2.6.0+cu124
+```
+
+with a CPU-only PyTorch installation following the instructions at:  
+[https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+
+### Additional Dependencies for DKLGP
+
+Furthermore, install all modules in [https://github.com/katzfuss-group/DKL-GP](https://github.com/katzfuss-group/DKL-GP) to run the DKLGP method used in the real-world data comparison.
 
 ## Repository Structure
 
